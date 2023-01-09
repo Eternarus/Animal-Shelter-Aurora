@@ -7,7 +7,7 @@ body {
     margin: 0;
 
     background-color: #fff;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
  
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -47,12 +47,17 @@ li {
     min-width: 1200px;
 }
 
+.container-block3 {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* -Media- */
 
-@media (max_width: 1200) {
+@media (min-width: 1200) {
     .block1_bg:after {
-        max-height: 300px;
+        max-height: 685px;
     }
     
 }
@@ -230,6 +235,28 @@ li {
     animation: slide_up 3s ease;
 }
 
+.block3_section_middle_left_btn {
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 30px;
+    padding: 15px 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+
+    background-color: #ffffff;
+    color: #170B26;
+    font-weight: 600;
+    border: 0;
+
+    border-radius: 200px;
+}
+
+.block3_section_middle_left_btn:hover {
+    border: 0;
+    background-color: #3e1372;
+    color: #fff;
+}
+
 /* Logo */
 
 .logo {
@@ -272,12 +299,10 @@ li {
 
 .block1_bg:after {
     display: block;
-
     content: " ";
     width: 100%;
-    height: 100%;
+    height: 101%;
     min-width: 1200px;
-    min-height: none;
     background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
     z-index: 11;
@@ -329,7 +354,7 @@ li {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: #162F47;
+    color: #000;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
@@ -339,8 +364,8 @@ li {
     padding-top: 40px;
     margin-top: 30px;
     font-size: 30px;
-    font-weight: normal;
-    color: #162F47;
+    font-weight: 300;
+    color: #000;
 }
 
 .block2_section_upper_bg2 {
@@ -421,4 +446,159 @@ li {
 
 .block2_section_lower_content:nth-child(6):hover {
     background: linear-gradient(45deg, rgb(155, 154, 207), rgb(82, 94, 182));
+}
+
+/* -Block3- */
+
+.block3 {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.block3_section_upper {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.block3_section_upper_left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 80px;
+}
+
+.block3_section_upper_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px 0 0;
+}
+
+.block3_section_upper_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.block3_section_upper_text {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.block3_section_upper_bg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -10;
+    width: 1170px;
+    height: 170px;
+
+    border: 2px #EDEDED solid;
+    background-color: #EDEDED;
+    border-radius: 35px;
+}
+
+.block3_section_upper_icon {
+    margin-right: 10px;
+}
+
+.block3_section_middle {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3_section_middle_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 100%;
+    height: 360px;
+    z-index: -10;
+
+    background-color: #170B26;
+}
+
+.container-block3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3_section_middle_right_img {
+    padding-left: 10px;
+}
+
+.block3_section_middle_left_title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px #fff solid;
+}
+
+.block3_section_middle_left_text {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.block3_section_lower {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.block3_section_lower_bg {
+    position: absolute;
+    z-index: -10;
+    width: 1170px;
+    height: 360px;
+    
+    border: 2px #EDEDED solid;
+    background-color: #EDEDED;
+    border-radius: 40px;
+}
+
+.block3_section_lower_title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+
+    padding-bottom: 10px;
+    
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 2px #333 solid;
+}
+
+.block3_section_lower_text {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 30px 10px 0 10px;
+}
+
+.block3_section_lower_name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 20px;
 }
