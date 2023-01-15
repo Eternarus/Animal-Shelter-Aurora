@@ -45,7 +45,7 @@ li {
     min-width: 1200px;
 }
 
-.container-block3 {
+.container-reviewse {
     display: flex;
     justify-content: space-between;
 }
@@ -92,24 +92,43 @@ li {
 
 }
 
+/* -ScrollBar- */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(195, 195, 195);
+}
+
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: rgba(211, 211, 211, 0.231);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 3px solid rgb(209, 209, 209);
+  background-color: rgb(209, 209, 209);
+}
+
 /* -Header- */
    
 .header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
 
     padding: 10px 20px 10px 20px;
-    position: relative;
+    position:  absolute;
 }
    
 .header_inner {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-
-    z-index: 100;
 }
 
 /* -Block1_Nav- */
@@ -120,7 +139,7 @@ li {
     font-size: 20px;
     font-weight: 700;
 
-    z-index: 100;
+    z-index: 1000;
 }
 
 .nav_text {
@@ -133,6 +152,7 @@ li {
 
     text-decoration: none;
     text-transform: capitalize;
+    cursor: pointer;
     text-shadow: 1px -1px 0 #00f2ff6f;
 
     opacity: 0.9;
@@ -153,13 +173,6 @@ li {
 .logo {
     display: flex;
     z-index: 100;
-
-    cursor: pointer;
-}
-
-.logo:hover {
-    transform: scale(1.05);
-    transition: transform .2s ease;
 }
 
 .logo_title {
@@ -188,7 +201,7 @@ li {
     position: relative;
     z-index: 100;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -240,8 +253,9 @@ li {
     transform: scale(1.05);
 }
 
-.block2-btn {
+.hotel-btn {
     margin-top: 70px;
+    margin-right: 25px;
     align-self: flex-start;
     font-size: 30px;
     padding: 20px 15px;
@@ -251,7 +265,11 @@ li {
     border-radius: 200px;
 }
 
-.block2-btn:hover {
+.hotel-btn:nth-child(2) {
+    margin-right: 0;
+}
+
+.hotel-btn:hover {
     background-color: #294661;
     border: 0;
     transform: scale(1.05);
@@ -314,30 +332,79 @@ li {
     position: relative;
 
     width: 100%;
-    height: 95vh;
-    margin-top: 13vh;
+    min-height: 95vh;
 }
 
-.block2_inner {
+.statistics {
+    width: 100%;
+    height: 10.6em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.statistics_left {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0 0 0 80px;
 }
 
-.block2_section_upper {
+.statistics_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px 0 0;
+}
+
+.statistics_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #170B26;
+    text-shadow: 2px -2px 0 #ff00006f;
+}
+
+.statistics_text {
+    margin-top: 10px;
+    font-size: 30px;
+    text-shadow: 1px -1px 0 #00f2ff6f;
+}
+
+.statistics_bg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -10;
+    width: 1170px;
+    height: 170px;
+
+    border: 2px #EDEDED solid;
+    background-color: #EDEDED;
+    border-radius: 35px;
+}
+
+.statistics_icon {
+    margin-right: 10px;
+}
+
+
+.hotel_section_upper {
     display: flex;
     justify-content: space-between;
     z-index: 10;
 }
 
-.block2_section_upper_left {
+.hotel_section_upper_left {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
     width: 100%;
 }
 
-.block2_section_upper_bg1 {
+.hotel_bg {
     border: 1px #EFEFEF solid;
     background: #EFEFEF;
     border-top-right-radius: 1000px;
@@ -351,7 +418,7 @@ li {
     z-index: -10;
 }
 
-.block2_section_upper_left_title {
+.hotel_section_upper_left_title {
     font-size: 50px;
     color: #000;
     font-weight: 700;
@@ -360,7 +427,7 @@ li {
     
 }
 
-.block2_section_upper_left_text {
+.hotel_section_upper_left_text {
     border-top: 2px #170B26 solid;
     padding-top: 40px;
     margin-top: 30px;
@@ -370,7 +437,7 @@ li {
     text-shadow: 1px -1px 0 #00f2ff6f;
 }
 
-.block2_section_upper_bg2 {
+.hotel_section_upper_bg2 {
     padding-left: 100px;
     width: 600px;
     z-index: -102;
@@ -385,9 +452,7 @@ li {
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
 	overflow: hidden;
-	min-height: 20em;
 	scroll-snap-type: both mandatory;
-	scroll-padding: 1rem;
     z-index: 100;
 }
 
@@ -463,60 +528,6 @@ li {
     background-color: #fff;
 }
 
-.statistics {
-    width: 100%;
-    height: 10.6em;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.statistics_left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 0 0 80px;
-}
-
-.statistics_right {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 80px 0 0;
-}
-
-.statistics_number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    color: #170B26;
-    text-shadow: 2px -2px 0 #ff00006f;
-}
-
-.statistics_text {
-    margin-top: 10px;
-    font-size: 30px;
-    text-shadow: 1px -1px 0 #00f2ff6f;
-}
-
-.statistics_bg {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: -10;
-    width: 1170px;
-    height: 170px;
-
-    border: 2px #EDEDED solid;
-    background-color: #EDEDED;
-    border-radius: 35px;
-}
-
-.statistics_icon {
-    margin-right: 10px;
-}
-
 .abuse {
     width: 100%;
     height: 370px;
@@ -537,7 +548,7 @@ li {
     background-color: #170B26;
 }
 
-.container-block3 {
+.container-reviewse {
     display: flex;
     justify-content: space-between;
 }
@@ -563,18 +574,17 @@ li {
     color: #fff;
 }
 
-.block3_section_lower {
+.reviewse_section_lower {
     width: 100%;
     height: 37.5em;
     overflow-y: scroll;
     margin-top: 10px;
     margin-bottom: 30px;
 
-    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2) inset;
     padding: 10px;
 }
 
-.block3_section_lower_title {
+.reviewse_section_lower_title {
     font-size: 40px;
     font-weight: bold;
     display: flex;
@@ -582,60 +592,60 @@ li {
     text-shadow: 2px -2px 0 #00f2ff6f;
 }
 
-.block3_section_lower_content {
+.reviewse_section_lower_content {
     height: 170px;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     padding: 15px;
 }
 
-.block3_section_lower_content:nth-child(1) {
+.reviewse_section_lower_content:nth-child(1) {
     margin-top: 10px;
 }
 
-.block3_section_lower_content:nth-last-child() {
+.reviewse_section_lower_content:nth-last-child() {
     margin-bottom: 0px;
 }
 
-.block3_section_lower_nickname {
+.reviewse_section_lower_nickname {
     display: flex;
     justify-content: space-between;
 }
 
-.block3_section_lower_nickname_left {
+.reviewse_section_lower_nickname_left {
     display: flex;
     justify-content: space-between;
 }
 
-.block3_section_lower_left_name {
+.reviewse_section_lower_left_name {
     display: flex;
     flex-direction: column;
 }
 
-.block3_section_lower_name{
+.reviewse_section_lower_name{
     font-size: 25px;
     font-weight: bold;
     text-shadow: 1px -1px 0 #00f2ff6f;
 }
 
-.block3_section_lower_ava {
+.reviewse_section_lower_ava {
     width: 55px;
     height: 55px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.block3_section_lower_star {
+.reviewse_section_lower_star {
     height: 18px;
     width: 105px;
 }
 
-.block3_section_lower_data {
+.reviewse_section_lower_data {
     font-size: 20px;
     color: #696969;
 }
 
-.block3_section_lower_text {
+.reviewse_section_lower_text {
     font-size: 20px;
     color: #333;
     padding-bottom: 5px;
@@ -659,7 +669,7 @@ li {
     justify-content: space-between;
 }
 
-.footer_middle_title {
+.footer_nav_title {
     font-size: 30px;
     font-weight: bold;
     text-shadow: 2px -2px 0 #00f2ffbb;
@@ -671,14 +681,14 @@ li {
     text-shadow: 2px -2px 0 #00f2ff6f;
 }
 
-.footer_middle_links {
+.footer_nav_links {
     list-style-type: none;
     text-decoration: none;
     line-height: 1.6;
     padding: 0;
 }
 
-.footer_middle_link {
+.footer_nav_link {
     display: flex;
     align-self: start;
     color: #fff;
@@ -689,7 +699,7 @@ li {
     scale: 1;
 }
 
-.footer_middle_link:hover {
+.footer_nav_link:hover {
     opacity: 1;
     transform: scale(1.05);
     transition: transform .2s ease;
