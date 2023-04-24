@@ -1,3 +1,3 @@
-# Project_Animal-Shelter-
+# Shelter Aurora
 ## Student's project for College
-## Project topic: Animal shelter "Animals Paradise"
+## Project topic: Animal shelter "Animals Aurora"
