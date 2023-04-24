@@ -629,4 +629,98 @@ li {
     z-index: 10;
 }
 
+/* -Pet- */
+
+.pet {
+    padding-top: 20px;
+}
+
+.pet_sections {
+    display: flex;
+    padding-top: 20px;
+}
+
+.margin {
+    margin: 0px 30px 0px 30px;
+}
+
+.pet_conten:nth-child(1) {
+    margin-left: 0px;
+}
+
+.pet_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 15px;
+}
+
+.pet_name {
+    font-size: 45px;
+    color: #00BDED;
+    font-weight: bold;
+
+    font-family: 'Ubuntu', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.pet_description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 20px;
+    color: #333;
+
+    padding-top: 10px;
+}
+
+.pet_btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* -Cruelty- */
+
+.cruelty_inner {
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 10;
+    position: relative;
+
+    padding-top: 70px;
+}
+
+.text_whrite {
+    color: #fff;
+}
+
+.cruelty_text {
+    color: #fff;
+    font-size: 25px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.cruelty_container {
+    display: flex;
+    justify-content: center;
+}
+    
+.cruelty_bg {
+    position: absolute;
+
+    background-color: #00BDED;
+    width: 1600px;
+    height: 500px;
+
+    border-radius: 32px;
+
+    z-index: 1;
+}
+
 /* /<-->\  END  /<-->\ */
