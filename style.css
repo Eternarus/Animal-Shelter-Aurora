@@ -139,7 +139,6 @@ li {
     font-size: 25px;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
 
     z-index: 1000;
 }
@@ -242,6 +241,26 @@ li {
     margin-top: 30px;
 
     animation: slide_up 2s ease;
+}
+
+.intro_inner {
+    display: flex;
+    
+}
+
+.intro_img {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 7%;
+
+    animation: slide_up 2.5s ease;
+}
+
+.intro_title {
+    position: relative;
+    z-index: 10;
 }
 
 /* -Button- */
@@ -480,7 +499,7 @@ li {
     height: 70px;
 }
 
-.advantage_content_title {
+.reviews_content_title {
     align-items: center;
     padding-left: 15px;
 }
@@ -507,7 +526,7 @@ li {
 }
 
 
-.advantage_slider {
+.reviews_slider {
     min-width: 1200px;
     padding: 1rem;
 	display: grid;
@@ -520,7 +539,7 @@ li {
     z-index: 100;
 }
 
-.advantage_content {
+.reviews_content {
     background-color: #fff;
 	scroll-snap-align: center;
 	display: inline-block;
@@ -528,11 +547,11 @@ li {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15), -5px -5px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-.advantage_slider_active {
+.reviews_slider_active {
 	scroll-snap-type: unset;
 }
 
-.advantage_slider_title {
+.reviews_slider_title {
     display: flex;
     justify-content: center;
 
@@ -541,7 +560,7 @@ li {
     font-weight: bold;
 }
 
-.advantage_slider_text {
+.reviews_slider_text {
     display: flex;
     justify-content: center;
 
@@ -550,7 +569,7 @@ li {
     color: #333;
 }
 
-.advantage_content:hover {
+.reviews_content:hover {
     background: #00BDED;
     transition: all 0.5s ease;
 }
@@ -692,6 +711,7 @@ li {
     position: relative;
 
     padding-top: 70px;
+    margin-bottom: 70px;
 }
 
 .text_whrite {
@@ -721,6 +741,50 @@ li {
     border-radius: 32px;
 
     z-index: 1;
+}
+
+/* -Equipment- */
+
+.equipment_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment_wrapper {
+    padding-left: 20px;
+}
+
+/* -Hotel- */
+
+.hotel_inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hotel_wrapper {
+    padding-top: 50px;
+}
+
+/* -Maps- */
+
+.maps {
+    background-color: #333;
+    padding-top: 30px;
+}
+
+.maps_inner {
+    display: flex;
+}
+
+.maps_wrapper {
+    padding-left: 20px;
+}
+
+.maps_text {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 30px;
 }
 
 /* /<-->\  END  /<-->\ */
