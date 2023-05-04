@@ -42,12 +42,8 @@ li {
 /* -Container- */
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    z-index: 100;
-    padding: 0 15px;
-    min-width: 1200px;
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
 }
 
 .container-reviewse {
@@ -127,13 +123,14 @@ li {
     z-index: 1000;
 
     padding: 0 20px 10px 20px;
-    position: absolute;
+
 }
 
 .header_inner {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    z-index: 1003;
 }
 
 /* -Nav- */
@@ -181,6 +178,7 @@ li {
 .message {
     display: flex;
     align-items: center;
+    z-index: 1001;
 }
 
 .png_message {
@@ -220,7 +218,7 @@ li {
 /* -Intro- */
 
 .intro {
-    z-index: 100;
+    z-index: 1010;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -250,22 +248,24 @@ li {
 
 .intro_inner {
     display: flex;
-
+    margin-inline: auto;
 }
 
 .intro_img {
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 7%;
-
+    display: flex;
+    min-width: 50vw;
+    z-index: 1777;
     animation: slide_up 2.5s ease;
 }
 
 .intro_title {
     position: relative;
-    z-index: 10;
+    top: 25%;
+    z-index: 1077;
+}
+
+.text_black {
+    color: #000;
 }
 
 /* -Button- */
@@ -330,9 +330,10 @@ li {
     top: 0;
     left: 0;
 
+
     width: 100%;
     min-width: 1200px;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     object-fit: cover;
 }
@@ -351,8 +352,6 @@ li {
 
 .footer {
     width: 100%;
-    min-width: 1200px;
-    height: 300px;
     background: url(./img/footer_bg.png);
     color: #fff;
 
@@ -500,7 +499,8 @@ li {
 
 .reviews_ava {
     align-items: center;
-    width: 70px;
+    max-width: 70px;
+    width: 100%;
     height: 70px;
 }
 
@@ -593,6 +593,7 @@ li {
 }
 
 .statistic_inner {
+    position: relative;
     padding-bottom: 67px;
     padding-top: 30px;
 }
@@ -640,14 +641,7 @@ li {
     margin-top: 25px;
 }
 
-.statistic_bg {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
 
-    width: 100%;
-}
 
 .statistic_stat {
     z-index: 10;
@@ -706,6 +700,10 @@ li {
     justify-content: center;
 }
 
+.pet_padding {
+    margin-top: 50px;
+}
+
 /* -Cruelty- */
 
 .cruelty_inner {
@@ -723,6 +721,11 @@ li {
     color: #fff;
 }
 
+.cruelty_img {
+    width: 100%;
+    max-height: 378px;
+}
+
 .cruelty_text {
     color: #fff;
     font-size: 25px;
@@ -737,10 +740,12 @@ li {
 }
 
 .cruelty_bg {
+    display: flex;
     position: absolute;
 
     background-color: #00BDED;
-    width: 1600px;
+    width: 75vw;
+    min-width: 1280px;
     height: 500px;
 
     border-radius: 32px;
