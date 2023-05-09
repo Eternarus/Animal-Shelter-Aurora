@@ -9,107 +9,160 @@
     <title>Приют</title>
 </head>
 
-    <!------/ < Header > \------>
+<!------/ < Header > \------>
 
-    <header class="header" id="header">
-        <div class="header_inner">
+<header class="header" id="header">
+    <div class="header_inner">
 
-            <div class="logo">
-                <span class="logo_title text_black">Приют</span>
-                <span class="logo_title logo_title-2">Аврора</span>
-            </div>
+        <div class="logo">
+            <span class="logo_title text_black">Приют</span>
+            <span class="logo_title logo_title-2">Аврора</span>
+        </div>
 
-            <nav class="nav">
-                <a href="./index.html" class="nav_text text_black">Главная</a>
-                <a href="./index2.html" class="nav_text text_black">О нас</a>
-                <a href="./index4.html" class="nav_text text_black">Нас поддерживают</a>
-                <a href="#footer" class="nav_text text_black">Помощь</a>
-            </nav>
+        <nav class="nav">
+            <a href="./index.html" class="nav_text text_black">Главная</a>
+            <a href="./index2.html" class="nav_text text_black">О нас</a>
+            <a href="./index4.html" class="nav_text text_black">Нас поддерживают</a>
+            <a href="#footer" class="nav_text text_black">Помощь</a>
+        </nav>
 
-            <div class="message">
-                <a href=""><img src="./img/footer_right_img1.png" alt="" class="png_message"></a>
-                <a href=""><img src="./img/footer_right_img2.png" alt="" class="png_message"></a>
-                <a href=""><img src="./img/footer_right_img3.png" alt="" class="png_message"></a>
-                <a href=""><img src="./img/footer_right_img4.png" alt="" class="png_message"></a>
+        <div class="message">
+            <a href=""><img src="./img/footer_right_img1.png" alt="" class="png_message"></a>
+            <a href=""><img src="./img/footer_right_img2.png" alt="" class="png_message"></a>
+            <a href=""><img src="./img/footer_right_img3.png" alt="" class="png_message"></a>
+            <a href=""><img src="./img/footer_right_img4.png" alt="" class="png_message"></a>
+        </div>
+
+    </div>
+</header>
+
+<!------/ < Pet > \------>
+
+<section class="pet">
+
+    <div class="container">
+
+        <div class="btn_section">
+
+            <div id="pet_btn">
+                <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+                <button class="btn" onclick="filterSelection('cat')" id="btn"> Кошки</button>
+                <button class="btn" onclick="filterSelection('dog')"> Собаки</button>
             </div>
 
         </div>
-    </header>
 
-        <!------/ < Pet > \------>
+        <div class="pet_section">
+            <div class="pet_padding"></div>
 
-        <section class="pet">
-
-            <div class="container">
-
-                
-
-
-                <div class="pet_sections">
-
-                    <div class="pet_padding"></div>
-    
-                    <div class="pet_content">
-                        <img src="./img/pet_img1.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name">Мая, 7 лет</div>
-                            <div class="pet_description">Собака Мая очень умная и<br>очень уверенная в себе »девушка»</div>
-                        </div>
-                    </div>
-    
-                    <div class="pet_content margin">
-                        <img src="./img/pet_img2.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name">Тигра, 1 год</div>
-                            <div class="pet_description">Тигра девочка, её подобрали на обочине дороги, мокрую и грязную.
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="pet_content">
-                        <img src="./img/pet_img3.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name">Винни, 2 годa</div>
-                            <div class="pet_description">У нашего Винни в голове не опилки, но как и его тезка он очень
-                                нуждается в своём Кристофере Робине!</div>
-                        </div>
-                    </div>
-    
+            <div class="pet_content dog active">
+                <img src="./img/pet_img1.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Мая, 7 лет</div>
+                    <div class="pet_description">Собака Мая очень умная и<br>очень уверенная в себе »девушка»</div>
                 </div>
-    
-                <div class="pet_sections">
-    
-                    <div class="pet_content">
-                        <img src="./img/pet_img4.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name">Плюша, 2 года</div>
-                            <div class="pet_description"> Красивая двухлетняя кошечка, с доверчивым взглядом и светлой
-                                душой.</div>
-                        </div>
-                    </div>
-    
-                    <div class="pet_content margin">
-                        <img src="./img/pet_img5.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name">Ула, 1 год</div>
-                            <div class="pet_description">Улу привязали к ограде приюта — ещё для кого-то собака оказалась
-                                ненужной</div>
-                        </div>
-                    </div>
-    
-                    <div class="pet_content">
-                        <img src="./img/pet_img6.png" alt="" class="pet_img">
-                        <div class="pet_wrapper">
-                            <div class="pet_name"></div>
-                            <div class="pet_description"></div>
-                        </div>
-                    </div>
-    
-                </div>
-    
             </div>
-    
-        </section>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img2.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Тигра, 1 год</div>
+                    <div class="pet_description">Тигра девочка, её подобрали на обочине дороги, мокрую и грязную.
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet_content dog active">
+                <img src="./img/pet_img3.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Винни, 2 годa</div>
+                    <div class="pet_description">У нашего Винни в голове не опилки, но как и его тезка он очень
+                        нуждается в своём Кристофере Робине!</div>
+                </div>
+            </div>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img4.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Плюша, 2 года</div>
+                    <div class="pet_description"> Красивая двухлетняя кошечка, с доверчивым взглядом и светлой
+                        душой.</div>
+                </div>
+            </div>
+
+            <div class="pet_content dog active">
+                <img src="./img/pet_img5.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Ула, 1 год</div>
+                    <div class="pet_description">Улу привязали к ограде приюта — ещё для кого-то собака оказалась
+                        ненужной</div>
+                </div>
+            </div>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img6.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Василий, 4 года</div>
+                    <div class="pet_description">У мусорного контейнера была найдена коробка c котятами. Котята ждали
+                        спасения и мы помогли им.</div>
+                </div>
+            </div>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img7.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Бусинка, 6 мес.</div>
+                    <div class="pet_description">Была найдена в подвале снесенного дома с мамой и еще тремя котятами.</div>
+                </div>
+            </div>
+            
+            <div class="pet_content dog active">
+                <img src="./img/pet_img9.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Зак, 1 год</div>
+                    <div class="pet_description">Пришел к нам сам в 2 месяца. Увидел, что можно покушать и остался.</div>
+                </div>
+            </div>
+
+            <div class="pet_content dog active">
+                <img src="./img/pet_img10.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Чопа, 5 лет</div>
+                    <div class="pet_description">Пса оставили на привязи его "хозяева", на территории пустыря.</div>
+                </div>
+            </div>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img11.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Сёма, 1 год</div>
+                    <div class="pet_description">Брэд нянчил Сёму с самого рождения. Вместе жили на стоянке.</div>
+                </div>
+            </div>
+
+            <div class="pet_content cat active">
+                <img src="./img/pet_img8.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Бим, 3 года</div>
+                    <div class="pet_description">Бим был отловлен в промышленной зоне, где проживал.</div>
+                </div>
+            </div>
+
+            <div class="pet_content dog active">
+                <img src="./img/pet_img12.png" alt="" class="pet_img">
+                <div class="pet_wrapper">
+                    <div class="pet_name">Брэд, 2 года</div>
+                    <div class="pet_description">Парень жил у сторожей на стоянке. Сильно голодал, поэтому мы его забрали.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="./script/script_pet.js"></script>
 
 </body>
 
