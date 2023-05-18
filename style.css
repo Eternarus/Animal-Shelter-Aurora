@@ -174,7 +174,6 @@ li {
     transition: transform .2s ease;
 }
 
-
 .message {
     display: flex;
     align-items: center;
@@ -818,15 +817,17 @@ a {
 /* -Maps- */
 
 .maps {
-    background-color: #333;
-    padding-top: 30px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 .maps_inner {
     display: flex;
+    z-index: 10000;
 }
 
-.maps_wrapper {
+.maps_content {
     padding-left: 20px;
 }
 
@@ -1103,6 +1104,23 @@ input[type="radio"][id="dog"]:checked~.cat {
     opacity: 0;
 }
 
+/*Help*/
 
+.help_text {
+    font-size: 25px;
+}
+
+.help_wrapper {
+    font-size: 25px;
+}
+
+.help_img {
+    max-width: 40vh;
+}
+
+.help_section {
+    display: flex;
+    padding-top: 30px;
+}
 
 /* /<-->\  END  /<-->\ */
