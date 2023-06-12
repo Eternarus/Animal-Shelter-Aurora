@@ -27,13 +27,13 @@ openPopupButtons.forEach((button) => {
     })
 });
 
-closePopupButton.addEventListener('click',() => {
+closePopupButton.addEventListener('click', () => {
     popupBg.classList.remove('active');
     popup.classList.remove('active');
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target === popupBg) {
+    if (e.target === popupBg) {
         popupBg.classList.remove('active');
         popup.classList.remove('active');
     }
@@ -48,13 +48,13 @@ openPopupButtonsf.forEach((button) => {
     })
 });
 
-closePopupButtonf.addEventListener('click',() => {
+closePopupButtonf.addEventListener('click', () => {
     popupBgf.classList.remove('active');
     popupf.classList.remove('active');
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target === popupBgf) {
+    if (e.target === popupBgf) {
         popupBgf.classList.remove('active');
         popupf.classList.remove('active');
     }
@@ -69,13 +69,13 @@ openPopupButtons3.forEach((button) => {
     })
 });
 
-closePopupButton3.addEventListener('click',() => {
+closePopupButton3.addEventListener('click', () => {
     popupBg3.classList.remove('active');
     popup3.classList.remove('active');
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target === popupBg3) {
+    if (e.target === popupBg3) {
         popupBg3.classList.remove('active');
         popup3.classList.remove('active');
     }
@@ -90,13 +90,13 @@ openPopupButtons4.forEach((button) => {
     })
 });
 
-closePopupButton4.addEventListener('click',() => {
+closePopupButton4.addEventListener('click', () => {
     popupBg4.classList.remove('active');
     popup4.classList.remove('active');
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target === popupBg4) {
+    if (e.target === popupBg4) {
         popupBg4.classList.remove('active');
         popup4.classList.remove('active');
     }
