@@ -61,7 +61,6 @@ li {
     .block1_bg:after {
         max-height: 685px;
     }
-
 }
 
 /* -Keyframes- */
@@ -238,14 +237,14 @@ li {
 
 .intro_img {
     display: flex;
-    z-index: 1777;
+    z-index: 1000;
     animation: slide_up 2.5s ease;
 }
 
 .intro_title {
     position: relative;
     top: 25%;
-    z-index: 1077;
+    z-index: 1000;
 }
 
 .text_black {
@@ -1072,7 +1071,7 @@ input[type="radio"] {
     background: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #222222;
-    
+
     padding: 0.5%;
     margin: 0.5%;
     margin-bottom: 30px;
