@@ -12,7 +12,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    min-width: 970px;
+    min-width: 1300px;
 }
 
 *,
@@ -55,13 +55,6 @@ li {
     justify-content: space-between;
 }
 
-/* -Media- */
-
-@media (min-width: 1200) {
-    .block1_bg:after {
-        max-height: 685px;
-    }
-}
 
 /* -Keyframes- */
 
@@ -238,8 +231,10 @@ li {
 .intro_img {
     display: flex;
     z-index: 1000;
+
     animation: slide_up 2.5s ease;
 }
+
 
 .intro_title {
     position: relative;
@@ -326,7 +321,7 @@ li {
     left: 0;
 
     width: 100%;
-    min-width: 1200px;
+    min-width: 1300px;
     height: 100%;
     overflow: hidden;
     object-fit: cover;
@@ -334,7 +329,7 @@ li {
 
 .video_darken {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1300px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
 
@@ -426,7 +421,7 @@ li {
 
 
 .info_title_text {
-    font-size: 50px;
+    font-size: 2.6vw;
     font-weight: 700;
     z-index: 1000;
 }
@@ -1115,6 +1110,62 @@ input[type="radio"][id="dog"]:checked~.cat {
 .help_section {
     display: flex;
     padding-top: 30px;
+}
+
+/* -Media- */
+
+@media (width <= 1300px) {
+    .block1_bg:after {
+        max-height: 685px;
+    }
+
+    .info_img2 {
+        width: 60vw;
+        min-width: 680px;
+    }
+
+    .equipment_img {
+        width: 60vw;
+        min-width: 550px;
+    }
+
+    .intro_img {
+        width: 60vw;
+        min-width: 550px;
+    }
+
+    .hotel_img {
+        width: 60vw;
+        min-width: 550px;
+    }
+
+    .cruelty_img {
+        width: 60vw;
+        min-width: 550px;
+    }
+
+    .nav_text {
+        font-size: 20px;
+    }
+
+    .logo_title {
+        font-size: 35px;
+    }
+    
+    .info_title_text {
+        font-size: 45px;
+    }
+
+    .pet_description, .cruelty_text, .footer_nav_link, .footer_contact {
+        font-size: 30px;
+    }
+
+    .reviews_slider_text, .footer_nav_title {
+        font-size: 35px;
+    }
+
+    
+
 }
 
 /* /<-->\  END  /<-->\ */
