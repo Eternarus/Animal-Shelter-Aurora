@@ -322,7 +322,8 @@ li {
 
     width: 100%;
     min-width: 1300px;
-    height: 100%;
+    height: 100vh;
+    min-height: 840px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -330,7 +331,8 @@ li {
 .video_darken {
     width: 100%;
     min-width: 1300px;
-    height: 100%;
+    height: 100vh;
+    min-height: 840px;
     background-color: rgba(0, 0, 0, 0.65);
 
     position: absolute;
@@ -1120,40 +1122,51 @@ input[type="radio"][id="dog"]:checked~.cat {
     }
 
     .info_img2 {
+        display: none;
         width: 60vw;
-        min-width: 680px;
+        min-width: 550px;
+    }
+
+    .info_img {
+        display: none;
+        width: 60vw;
+        min-width: 550px;
     }
 
     .equipment_img {
+        display: none;
         width: 60vw;
         min-width: 550px;
     }
 
     .intro_img {
+        display: none;
         width: 60vw;
         min-width: 550px;
     }
 
     .hotel_img {
+        display: none;
         width: 60vw;
         min-width: 550px;
     }
 
     .cruelty_img {
+        display: none;
         width: 60vw;
         min-width: 550px;
     }
 
     .nav_text {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .logo_title {
-        font-size: 35px;
+        font-size: 45px;
     }
     
     .info_title_text {
-        font-size: 45px;
+        font-size: 80px;
     }
 
     .pet_description, .cruelty_text, .footer_nav_link, .footer_contact {
@@ -1164,7 +1177,62 @@ input[type="radio"][id="dog"]:checked~.cat {
         font-size: 35px;
     }
 
+    .help_img {
+        width: 60vw;
+        min-width: 550px;
+    }
+
+    .intro {
+        min-height: 90vh;
+    }
+
+    .info_content, .info-content_ul_li,
+     .cruelty_text, .intro_quote,
+      .pet_description, .footer_nav_link, .footer_contact, .reviews_slider_title, .maps_text, .help_wrapper {
+        font-size: 45px;
+    }
+
+    .pet_name {
+        font-size: 50px;
+    }
+
+    .statistic_text, .reviews_data {
+        font-size: 40px;
+    }
+
+    .btn {
+        padding: 30px 30px;
+        font-size: 60px;
+    }
+
+    .btn_statistic {
+        padding: 13px 30px;
+        font-size: 50px;
+        margin-right: 20px;
+    }
+
+    .cruelty_bg {
+        height: 700px;
+    }
     
+    .footer_logo, .footer_right_img, .message, .img_star, .reviews_ava, .help_img {
+        display: none;
+    }
+
+    .footer_nav_title {
+        font-size: 55px;
+        margin-right: 20px;
+    }
+
+    .reviews_slider {
+        overflow: scroll;
+        
+    }
+
+    .reviews_slider::-webkit-scrollbar {
+        height: 20px;
+        width: 12px;
+    }
 
 }
 
