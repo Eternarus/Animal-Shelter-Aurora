@@ -63,7 +63,11 @@ li {
     background-color: #00BDED;
     border-radius: 32px;
     z-index: 1;
+}
 
+.big_container {
+    display: grid;
+    gap: 20px;
 }
 
 
