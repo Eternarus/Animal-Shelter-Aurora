@@ -1188,7 +1188,9 @@ input[type="radio"][id="dog"]:checked~.cat {
 
     .info_content, .info-content_ul_li,
      .cruelty_text, .intro_quote,
-      .pet_description, .footer_nav_link, .footer_contact, .reviews_slider_title, .maps_text, .help_wrapper {
+      .pet_description, .footer_nav_link,
+       .footer_contact, .reviews_slider_title,
+        .maps_text, .help_wrapper {
         font-size: 45px;
     }
 
@@ -1198,6 +1200,14 @@ input[type="radio"][id="dog"]:checked~.cat {
 
     .statistic_text, .reviews_data {
         font-size: 40px;
+    }
+
+    .popup3 {
+        font-size: 35px;
+    }
+
+    .popup_text {
+        font-size: 30px;
     }
 
     .btn {
@@ -1232,6 +1242,34 @@ input[type="radio"][id="dog"]:checked~.cat {
     .reviews_slider::-webkit-scrollbar {
         height: 20px;
         width: 12px;
+    }
+
+    .user-box, .popup2.active {
+        font-size: 30px;
+    }
+
+    .popup2 {
+        scale: 2;
+        left: 65%;
+        top: 65%;
+    }
+
+    .popup4 {
+        scale: 1.5;
+        left: 65%;
+        top: 65%;
+    }
+
+    .user-box input {
+        padding: 30px 0;
+    }
+
+    .clgutton {
+        scale: 0.7;
+    }
+
+    .info {
+        margin-top: 60px;
     }
 
 }
