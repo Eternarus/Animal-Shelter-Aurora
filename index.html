@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./style.css">
     <title>Shelter "Aurora"</title>
 </head>
@@ -13,12 +13,11 @@
 
     <!------/ < Video > \------>
 
-    <div class="block1_bg" id="main">
+    <div class="block1_container" id="main">
 
-        <a class="block1_video">
-            <div class="video_darken"></div>
+        <div class="block1_video">
             <video src="./Video/Block1_bg.mp4" class="block1_media" autoplay loop preload="auto" muted></video>
-        </a>
+        </div>
 
     </div>
 
@@ -113,28 +112,34 @@
     </section>
 
 
-    <section class="info info2">
-
-        <div class="">
-            <img src="./img/Info_img2.webp" alt="" class="info_img2">
-        </div>
+    <section class="info2">
 
         <div class="container">
-            <article class="info_inner info_inner2">
 
-                <div class="info_title_text"><span class="text_blue">Бездомные</span> животные на<br>улице</div>
+            <article class="info_inner2">
 
-                <div class="info_content text_padding">
+                    <img src="./img/Info_img2.webp" alt="" class="info_img2">
 
-                    <div class="info_content_text2">Cообщите место и наши сотрудники <br>заберут бездомных животных. Мы
-                        о них <br>позаботимся и найдём им новый дом
+                    <div>
+
+                        <div class="info_title_text"><span class="text_blue">Бездомные</span> животные на улице</div>
+
+                        <div class="info_content">
+
+                            <div class="info_content_text">Cообщите место и наши сотрудники заберут бездомных животных. Мы
+                                о них позаботимся и найдём им новый дом
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                            <button class="btn" id="open-popup2">Заполнить заявку</button>
+                        </div>
+
                     </div>
 
-                    <button class="btn" id="open-popup2">Заполнить заявку</button>
-
-                </div>
-
             </article>
+        
         </div>
 
     </section>
@@ -200,7 +205,6 @@
             <div class="info_title_text  text_center">Наши питомцы</div>
 
             <div class="pet_section">
-                <div class="pet_padding"></div>
 
                 <div class="pet_content dog active">
                     <img src="./img/pet_img1.webp" alt="" class="pet_img">
@@ -270,171 +274,28 @@
 
     </section>
 
-    <!------/ < Reviews > \------>
 
-    <section class="reviews">
-
-        <div class="container">
-
-            <div class="reviews_title">
-                <div class="info_title_text">Узнайте, что думают<br> <span class="text_blue">люди</span> о нашем приюте
-                </div>
-            </div>
-
-        </div>
-
-        <div class="reviews">
-            <ul class="reviews_slider">
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava.png" alt="" class="reviews_ava">
-                            <div class="reviews_content_title">
-                                <span class="reviews_slider_title">Светлана Петровна</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">20.12.2022</div>
-                    </div>
-
-                    <div class="reviews_slider_text">Я посетила приют и была поражена чистотой в вольерах, красивыми
-                        конурами, в мисках налита чистая вода и корм. Собачки, конечно, обиделись на меня, что мы их не
-                        выпустили, но на душе стало спокойно,- они сыты, ухожены. Ветеринар постоянно их осматривает,
-                        чувствуется его грамотность и внимательность. Спасибо, что заботитесь о них.
-                    </div>
-
-                </li>
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava2.png" alt="" class="reviews_ava">
-                            <div class="reviews_content_title">
-                                <span class="reviews_slider_title">Мария Алексеевна</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">18.12.2022</div>
-                    </div>
-
-                    <div class="reviews_slider_text">Я очень рада знакомству с вами, рада, что так много небезразличных
-                        людей - это придает сил и вселяет надежду,что вместе мы сможем многое. Благодаря группе мы
-                        узнали друг о друге, хотя обособленно существовали давно. Спасибо !
-                    </div>
-
-                </li>
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava3.png" alt="" class="reviews_ava">
-                            <div class="reviews_content_title">
-                                <span class="reviews_slider_title">Александр Юрьевич</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">01.10.2022</div>
-                    </div>
-
-                    <div class="reviews_slider_text">В этом приюте, я нашёл свою судьбу. Когда пришёл сюда, мои глаза
-                        упали на него, а его на меня. Он очень просился ко мне. Я привёл его домой, и он живёт со мной
-                        до сих пор.
-                    </div>
-
-                </li>
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava4.png" alt="" class="reviews_ava">
-                            <div class="reviewse_content_title">
-                                <span class="reviews_slider_title">Анна Максимовна</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">14.07.2022</div>
-                    </div>
-
-                    <div class="reviews_slider_text">Я очень довольна, хоть и пробыла в приюте очень мало времени. И
-                        просто влюбилась в серого пёсика. Если будет возможность приехать проведать собачек на
-                        выходных, то постараюсь приехать с гостинцами.
-                    </div>
-
-                </li>
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava5.png" alt="" class="reviews_ava">
-                            <div class="reviews_content_title">
-                                <span class="reviews_slider_title">Светлана Ивановна</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">26.09.2022</div>
-                    </div>
-
-                    <div class="reviews_slider_text">Я сегодня была в приюте!!! Я для них - новый человек. Все, кто
-                        гулял по
-                        территории меня обнюхали, понятное дело и облаяли меня, но собаки - не
-                        испуганы!!! Спасибо девочкам, которые за ними ухаживают. Я привезла
-                        им немного еды, но буду привозить еще!!
-                    </div>
-
-                </li>
-
-                <li class="reviews_content">
-
-                    <div class="reviews_name">
-                        <div class="reviews_name_container">
-                            <img src="./img/reviews_ava6.png" alt="" class="reviews_ava">
-                            <div class="reviews_content_title">
-                                <span class="reviews_slider_title">Дмитрий Сергеевич</span>
-                                <img src="./img/star.png" alt="" class="img_star">
-                            </div>
-                        </div>
-                        <div class="reviews_data">04.04.2022</div>
-
-                    </div>
-
-                    <div class="reviews_slider_text">Самый ответственный приют для животных, который я знаю. Все собаки
-                        умеют
-                        хорошо гулять на поводке и не агрессивны к человеку.
-                    </div>
-
-                </li>
-
-            </ul>
-        </div>
-    </section>
 
     <!------/ < Cruelty > \------>
 
     <section class="cruelty">
 
-        <div class="cruelty_container">
-            <div class="cruelty_bg"></div>
-        </div>
+        <div class="container_cruelty">
 
-        <div class="container">
-            <article class="cruelty_inner">
+            <div class="container">
+                <article class="cruelty_inner">
 
-                <div class="cruelty_content">
-                    <div class="info_title_text text_whrite">Жестокое обращение с животными</div>
-                    <div class="cruelty_text">Мы обрабатываем каждый случай и передаем его юристам, правозащитным
-                        организациям, и в правоохранительные органы</div>
-                    <button class="btn" id="open-popup2">Заполнить заявку</button>
-                </div>
+                    <div class="cruelty_content">
+                        <div class="info_title_text text_whrite">Жестокое обращение с животными</div>
+                        <div class="cruelty_text">Мы обрабатываем каждый случай и передаем его юристам, правозащитным
+                            организациям, и в правоохранительные органы</div>
+                        <button class="btn" id="open-popup2">Заполнить заявку</button>
+                    </div>
 
-                    <img src="./img/cruelty_bg.webp" alt="" class="cruelty_img">
-                 
-            </article>
+                     <img src="./img/cruelty_bg.webp" alt="" class="cruelty_img">
+
+                </article>
+            </div>
         </div>
 
     </section>
@@ -446,9 +307,9 @@
 
             <div class="equipment_inner">
 
-                <div class="">
+                
                     <img src="./img/equipment_img.webp" alt="" class="equipment_img">
-                </div>
+
 
                 <article class="equipment_wrapper">
 
