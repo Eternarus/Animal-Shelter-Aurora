@@ -66,10 +66,10 @@ li {
 }
 
 .big_container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
-
 
 /* -Keyframes- */
 
@@ -464,6 +464,7 @@ li {
 
 .info-content_ul_li {
     line-height: 2;
+    list-style-type: initial;
 }
 
 .info_inner {
@@ -1101,6 +1102,28 @@ input[type="radio"][id="dog"]:checked~.cat {
 
 /* -Media- */
 
+@media (width <= 364px) {
+    .cruelty_img {
+        padding-right: 1rem;
+    }
+
+    .pet_description {
+        text-align: start;
+    }
+
+    .pet_img {
+        margin: 0;
+    }
+
+    .pet_name {
+        justify-content: start;
+    }
+
+    .wrapper {
+        justify-content: start;
+    }
+}
+
 @media (width <= 600px) {
 
     html {
@@ -1145,8 +1168,8 @@ input[type="radio"][id="dog"]:checked~.cat {
     }
 
     .intro_img, .info_img, .info_img2, .equipment_img, .hotel_img, .pet_img {
-        width: 60vw;
-        min-width: 330px;
+        width: 70vw;
+        min-width: 320px;
     }
 
     .intro_text, .info_title_text {
